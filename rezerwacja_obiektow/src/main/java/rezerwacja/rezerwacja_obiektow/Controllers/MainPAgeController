@@ -1,0 +1,13 @@
+package rezerwacja.rezerwacja_obiektów.Controllers;
+import org.springframework.stereotype.Controller;
+import javax.ws.rs.GET;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+public class MainPAgeController{
+    @GET
+    @RequestMapping("/")
+    public String showMAinPage(){
+        return "index";
+    }
+
+}
